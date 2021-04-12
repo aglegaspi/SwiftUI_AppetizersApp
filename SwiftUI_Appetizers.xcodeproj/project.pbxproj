@@ -14,6 +14,7 @@
 		ECCCF58E262456D3000DC0FF /* AppetizerListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCCF58D262456D3000DC0FF /* AppetizerListView.swift */; };
 		ECCCF591262456DF000DC0FF /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCCF590262456DF000DC0FF /* AccountView.swift */; };
 		ECCCF594262456EE000DC0FF /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCCF593262456EE000DC0FF /* OrderView.swift */; };
+		ECCCF5972624835C000DC0FF /* Appetizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCCF5962624835C000DC0FF /* Appetizer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		ECCCF58D262456D3000DC0FF /* AppetizerListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerListView.swift; sourceTree = "<group>"; };
 		ECCCF590262456DF000DC0FF /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		ECCCF593262456EE000DC0FF /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
+		ECCCF5962624835C000DC0FF /* Appetizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appetizer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				ECCCF57526245622000DC0FF /* SwiftUI_AppetizersApp.swift */,
+				ECCCF5962624835C000DC0FF /* Appetizer.swift */,
 				ECCCF57726245622000DC0FF /* AppetizerTabView.swift */,
 				ECCCF57926245624000DC0FF /* Assets.xcassets */,
 				ECCCF57E26245624000DC0FF /* Info.plist */,
@@ -147,6 +150,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECCCF5972624835C000DC0FF /* Appetizer.swift in Sources */,
 				ECCCF591262456DF000DC0FF /* AccountView.swift in Sources */,
 				ECCCF57826245622000DC0FF /* AppetizerTabView.swift in Sources */,
 				ECCCF57626245622000DC0FF /* SwiftUI_AppetizersApp.swift in Sources */,
