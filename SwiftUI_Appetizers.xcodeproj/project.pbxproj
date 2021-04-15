@@ -16,6 +16,7 @@
 		ECCCF591262456DF000DC0FF /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCCF590262456DF000DC0FF /* AccountView.swift */; };
 		ECCCF594262456EE000DC0FF /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCCF593262456EE000DC0FF /* OrderView.swift */; };
 		ECCCF5972624835C000DC0FF /* Appetizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCCF5962624835C000DC0FF /* Appetizer.swift */; };
+		ECD41C6526286D01000DCFE8 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD41C6426286D01000DCFE8 /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		ECCCF590262456DF000DC0FF /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		ECCCF593262456EE000DC0FF /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
 		ECCCF5962624835C000DC0FF /* Appetizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appetizer.swift; sourceTree = "<group>"; };
+		ECD41C6426286D01000DCFE8 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				ECCCF590262456DF000DC0FF /* AccountView.swift */,
 				ECCCF593262456EE000DC0FF /* OrderView.swift */,
 				EC4418AD262778B000A2FD06 /* AppetizerListCell.swift */,
+				ECD41C6426286D01000DCFE8 /* NetworkManager.swift */,
 			);
 			path = SwiftUI_Appetizers;
 			sourceTree = "<group>";
@@ -157,6 +160,7 @@
 				EC4418AE262778B000A2FD06 /* AppetizerListCell.swift in Sources */,
 				ECCCF591262456DF000DC0FF /* AccountView.swift in Sources */,
 				ECCCF57826245622000DC0FF /* AppetizerTabView.swift in Sources */,
+				ECD41C6526286D01000DCFE8 /* NetworkManager.swift in Sources */,
 				ECCCF57626245622000DC0FF /* SwiftUI_AppetizersApp.swift in Sources */,
 				ECCCF58E262456D3000DC0FF /* AppetizerListView.swift in Sources */,
 				ECCCF594262456EE000DC0FF /* OrderView.swift in Sources */,
