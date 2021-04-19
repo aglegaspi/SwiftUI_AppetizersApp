@@ -12,12 +12,16 @@ final class AppetizerListViewModel: ObservableObject {
     // broadcasts when property changes
     @Published var appetizers: [Appetizer] = []
     @Published var alertIem: AlertItem?
+    @Published var isLoading = false
     
     func getAppetizers() {
+        isLoading = true
+        
         NetworkManager.shared.getAppetizers { [self] (result) in
             
             // switches to main thread becasuse we're updating appetizers which is a UI update
             DispatchQueue.main.async {
+                isLoading = false
                 
                 switch result {
                 
@@ -40,13 +44,13 @@ final class AppetizerListViewModel: ObservableObject {
                         
                     case .unableToComplete:
                         alertIem = AlertContext.unableToComplete
-                    }
-                }
+                    } // error
+                } //switch result
                 
-            }
+            } //DispatchQueue.main.async
             
-        }
-    }
+        } //NetworkManager.shared.getAppetizers
+    } //getAppetizers
     
-}
+} //class
 

@@ -12,7 +12,7 @@ final class NetworkManager {
     // singleton
     static let shared = NetworkManager()
     
-    static let baseURL = "https://seanallen-course-backend.herokuapp.cm/swiftui-fundamentals/"
+    static let baseURL = "https://seanallen-course-backend.herokuapp.com/swiftui-fundamentals/"
     
     private let appetizerURL = baseURL + "appetizers"
     
