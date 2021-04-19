@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		EC3FF104262D92A80048A570 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3FF103262D92A80048A570 /* Alert.swift */; };
+		EC3FF107262E23D80048A570 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3FF106262E23D80048A570 /* LoadingView.swift */; };
+		EC3FF10A262E24B20048A570 /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3FF109262E24B20048A570 /* Color+Ext.swift */; };
 		EC4418AE262778B000A2FD06 /* AppetizerListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4418AD262778B000A2FD06 /* AppetizerListCell.swift */; };
 		ECCCF57626245622000DC0FF /* SwiftUI_AppetizersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCCF57526245622000DC0FF /* SwiftUI_AppetizersApp.swift */; };
 		ECCCF57826245622000DC0FF /* AppetizerTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCCF57726245622000DC0FF /* AppetizerTabView.swift */; };
@@ -24,6 +26,8 @@
 
 /* Begin PBXFileReference section */
 		EC3FF103262D92A80048A570 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		EC3FF106262E23D80048A570 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		EC3FF109262E24B20048A570 /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
 		EC4418AD262778B000A2FD06 /* AppetizerListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerListCell.swift; sourceTree = "<group>"; };
 		ECCCF57226245622000DC0FF /* SwiftUI_Appetizers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUI_Appetizers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECCCF57526245622000DC0FF /* SwiftUI_AppetizersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_AppetizersApp.swift; sourceTree = "<group>"; };
@@ -84,6 +88,8 @@
 				ECD41C6726286E48000DCFE8 /* APError.swift */,
 				ECD41C6A2628815C000DCFE8 /* AppetizerListViewModel.swift */,
 				EC3FF103262D92A80048A570 /* Alert.swift */,
+				EC3FF106262E23D80048A570 /* LoadingView.swift */,
+				EC3FF109262E24B20048A570 /* Color+Ext.swift */,
 			);
 			path = SwiftUI_Appetizers;
 			sourceTree = "<group>";
@@ -169,7 +175,9 @@
 				ECD41C6826286E48000DCFE8 /* APError.swift in Sources */,
 				EC4418AE262778B000A2FD06 /* AppetizerListCell.swift in Sources */,
 				ECD41C6B2628815C000DCFE8 /* AppetizerListViewModel.swift in Sources */,
+				EC3FF10A262E24B20048A570 /* Color+Ext.swift in Sources */,
 				ECCCF591262456DF000DC0FF /* AccountView.swift in Sources */,
+				EC3FF107262E23D80048A570 /* LoadingView.swift in Sources */,
 				ECCCF57826245622000DC0FF /* AppetizerTabView.swift in Sources */,
 				ECD41C6526286D01000DCFE8 /* NetworkManager.swift in Sources */,
 				ECCCF57626245622000DC0FF /* SwiftUI_AppetizersApp.swift in Sources */,
