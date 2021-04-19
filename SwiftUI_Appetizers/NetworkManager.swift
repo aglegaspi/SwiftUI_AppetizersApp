@@ -9,7 +9,7 @@ import Foundation
 
 final class NetworkManager {
     
-    // singleton 
+    // singleton
     static let shared = NetworkManager()
     
     static let baseURL = "https://seanallen-course-backend.herokuapp.com/swiftui-fundamentals/"
@@ -18,7 +18,7 @@ final class NetworkManager {
     
     private init() {}
     
-    // function completion handler that returns a result either a success and array of appetizerss or error of APError
+    // function completion handler that returns a result either a success array of appetizerss or failture of APError
     func getAppetizers(completed: @escaping (Result<[Appetizer], APError>) -> Void) {
         
         // check for good URL
@@ -30,8 +30,8 @@ final class NetworkManager {
         // create network call to make request with good url it'll return to data, response, and error
         let task = URLSession.shared.dataTask(with: URLRequest(url: url)) { (data, response, error) in
             
-            // check for error i.e. not data signal
-            guard let _ = error else {
+            // check for error i.e. lost wifi
+            if let _ = error {
                 completed(.failure(.unableToComplete))
                 return
             }
