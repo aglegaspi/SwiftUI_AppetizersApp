@@ -5,12 +5,13 @@
 //  Created by Alex 6.1 on 4/15/21.
 //
 
-import Foundation
+import UIKit
 
 final class NetworkManager {
     
     // singleton
     static let shared = NetworkManager()
+    private let cache = NSCache<NSString,UIImage>()
     
     static let baseURL = "https://seanallen-course-backend.herokuapp.com/swiftui-fundamentals/"
     
@@ -62,6 +63,34 @@ final class NetworkManager {
         // fire off the network call
         task.resume()
         
+    }
+    
+    // network call to download image. pass in url string and returns either a UIImage or nil
+    func downloadImage(fromURLString urlString: String, completed: @escaping (UIImage?) -> Void) {
+        let cacheKey = NSString(string: urlString)
+        
+        if let image = cache.object(forKey: cacheKey) {
+            completed(image)
+            return
+        }
+        
+        guard let url = URL(string: urlString) else {
+            completed(nil)
+            return
+        }
+        
+        let task = URLSession.shared.dataTask(with: URLRequest(url: url)) { data, response, error in
+            
+            guard let data = data, let image = UIImage(data: data) else {
+                completed(nil)
+                return
+            }
+            
+            self.cache.setObject(image, forKey: cacheKey)
+            completed(image)
+        }
+        
+        task.resume()
     }
     
     
