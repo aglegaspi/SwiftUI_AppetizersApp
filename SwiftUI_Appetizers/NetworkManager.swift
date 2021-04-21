@@ -11,6 +11,7 @@ final class NetworkManager {
     
     // singleton
     static let shared = NetworkManager()
+    // set up cache
     private let cache = NSCache<NSString,UIImage>()
     
     static let baseURL = "https://seanallen-course-backend.herokuapp.com/swiftui-fundamentals/"
@@ -67,18 +68,26 @@ final class NetworkManager {
     
     // network call to download image. pass in url string and returns either a UIImage or nil
     func downloadImage(fromURLString urlString: String, completed: @escaping (UIImage?) -> Void) {
+        
+        // set up cacheKey from URL
         let cacheKey = NSString(string: urlString)
         
+        // check caache for object before we download.
         if let image = cache.object(forKey: cacheKey) {
             completed(image)
             return
         }
         
+        // check if url is good
         guard let url = URL(string: urlString) else {
             completed(nil)
             return
         }
         
+        // if the url is good then do network call
+        // because we're using placeholder we don't care about errors
+        // if we can make an image set that image into the cache
+        // set completion handler to pass image up
         let task = URLSession.shared.dataTask(with: URLRequest(url: url)) { data, response, error in
             
             guard let data = data, let image = UIImage(data: data) else {
