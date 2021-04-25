@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct AppetizerDetailView: View {
+    
+    // pass in an appetizer for this view
     let appetizer: Appetizer
     
     var body: some View {
