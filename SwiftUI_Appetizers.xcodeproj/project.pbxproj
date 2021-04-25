@@ -25,6 +25,7 @@
 		ECD41C6826286E48000DCFE8 /* APError.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD41C6726286E48000DCFE8 /* APError.swift */; };
 		ECD41C6B2628815C000DCFE8 /* AppetizerListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD41C6A2628815C000DCFE8 /* AppetizerListViewModel.swift */; };
 		ECE7667C2636239B00C6B80B /* APButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE7667B2636239B00C6B80B /* APButton.swift */; };
+		ECE76680263625A400C6B80B /* XDismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE7667F263625A400C6B80B /* XDismissButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		ECD41C6726286E48000DCFE8 /* APError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APError.swift; sourceTree = "<group>"; };
 		ECD41C6A2628815C000DCFE8 /* AppetizerListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerListViewModel.swift; sourceTree = "<group>"; };
 		ECE7667B2636239B00C6B80B /* APButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APButton.swift; sourceTree = "<group>"; };
+		ECE7667F263625A400C6B80B /* XDismissButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDismissButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -219,6 +221,7 @@
 			isa = PBXGroup;
 			children = (
 				ECE7667B2636239B00C6B80B /* APButton.swift */,
+				ECE7667F263625A400C6B80B /* XDismissButton.swift */,
 			);
 			path = Buttons;
 			sourceTree = "<group>";
@@ -294,6 +297,7 @@
 			files = (
 				ECCCF5972624835C000DC0FF /* Appetizer.swift in Sources */,
 				ECD41C6826286E48000DCFE8 /* APError.swift in Sources */,
+				ECE76680263625A400C6B80B /* XDismissButton.swift in Sources */,
 				EC4418AE262778B000A2FD06 /* AppetizerListCell.swift in Sources */,
 				ECD41C6B2628815C000DCFE8 /* AppetizerListViewModel.swift in Sources */,
 				EC3FF10A262E24B20048A570 /* Color+Ext.swift in Sources */,
