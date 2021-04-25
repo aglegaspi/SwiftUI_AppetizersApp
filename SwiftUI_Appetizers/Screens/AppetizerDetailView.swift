@@ -16,77 +16,70 @@ struct AppetizerDetailView: View {
     var body: some View {
         
         VStack {
-            Image("food-placeholder")
-                .resizable()
+            AppetizerRemoteImage(urlString: appetizer.imageURL)
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 300, height: 225, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
             
-            Spacer()
-            
-            Text(appetizer.name)
-                .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
-            
-            Spacer()
-            
-            Text(appetizer.description)
-                .multilineTextAlignment(.center)
-                .font(.body)
-                .padding()
-            
-            Spacer()
-            
-            HStack {
-                VStack {
-                    Text("Calories")
-                        .bold()
-                        .font(.caption)
-                    Text("\(appetizer.calories)")
-                        .foregroundColor(.secondary)
-                        .fontWeight(.semibold)
-                        .italic()
-                }
-                .padding()
-                
-                VStack {
-                    Text("Carbs")
-                        .bold()
-                        .font(.caption)
-                    Text("\(appetizer.carbs)")
-                        .foregroundColor(.secondary)
-                        .fontWeight(.semibold)
-                        .italic()
-                }
-                .padding()
-                
-                VStack {
-                    Text("Protein")
-                        .bold()
-                        .font(.caption)
-                    Text("\(appetizer.protein)")
-                        .foregroundColor(.secondary)
-                        .fontWeight(.semibold)
-                        .italic()
-                }
-                .padding()
-            }//VStack
-            
-            
-            Spacer()
-            
-            Button {
-                print("tapped")
-            } label: {
-                Text("\(appetizer.price, specifier: "%.2f") - Add To Order")
-                    .font(.title3)
+            VStack {
+                Text(appetizer.name)
+                    .font(.title2)
                     .fontWeight(.semibold)
-                    .frame(width: 260, height: 50)
-                    .foregroundColor(.white)
-                    .background(Color.brandPrimary)
-                    .cornerRadius(10)
+                
+                Text(appetizer.description)
+                    .multilineTextAlignment(.center)
+                    .font(.body)
+                    .padding()
+                
+                HStack(spacing: 40) {
+                    VStack(spacing: 5) {
+                        Text("Calories")
+                            .bold()
+                            .font(.caption)
+                        
+                        Text("\(appetizer.calories)")
+                            .foregroundColor(.secondary)
+                            .fontWeight(.semibold)
+                            .italic()
+                    }
+                    
+                    VStack {
+                        Text("Carbs")
+                            .bold()
+                            .font(.caption)
+                        Text("\(appetizer.carbs)")
+                            .foregroundColor(.secondary)
+                            .fontWeight(.semibold)
+                            .italic()
+                    }
+                    
+                    VStack {
+                        Text("Protein")
+                            .bold()
+                            .font(.caption)
+                        Text("\(appetizer.protein)")
+                            .foregroundColor(.secondary)
+                            .fontWeight(.semibold)
+                            .italic()
+                    }
+                }//VStack
+                
+                
+                Spacer()
+                
+                Button {
+                    print("tapped")
+                } label: {
+                    Text("\(appetizer.price, specifier: "%.2f") - Add To Order")
+                        .font(.title3)
+                        .fontWeight(.semibold)
+                        .frame(width: 260, height: 50)
+                        .foregroundColor(.white)
+                        .background(Color.brandPrimary)
+                        .cornerRadius(10)
+                }
+                .foregroundColor(.white)
+                .padding(.bottom, 30)
             }
-            .foregroundColor(.white)
-            .padding(.bottom, 30)
-    
             
         }//VStack
         .frame(width: 300, height: 525)
