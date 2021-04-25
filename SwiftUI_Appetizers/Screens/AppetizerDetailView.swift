@@ -60,7 +60,8 @@ struct AppetizerDetailView: View {
                             .foregroundColor(.secondary)
                             .fontWeight(.semibold)
                             .italic()
-                    }
+                        
+                    } //VStack
                 }//VStack
                 
                 
@@ -69,13 +70,7 @@ struct AppetizerDetailView: View {
                 Button {
                     print("tapped")
                 } label: {
-                    Text("\(appetizer.price, specifier: "%.2f") - Add To Order")
-                        .font(.title3)
-                        .fontWeight(.semibold)
-                        .frame(width: 260, height: 50)
-                        .foregroundColor(.white)
-                        .background(Color.brandPrimary)
-                        .cornerRadius(10)
+                    APButton(title: "$\(appetizer.price, specifier: "%.2f") - Add To Cart")
                 }
                 .foregroundColor(.white)
                 .padding(.bottom, 30)

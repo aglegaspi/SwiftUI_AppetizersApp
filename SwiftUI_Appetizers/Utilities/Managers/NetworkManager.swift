@@ -72,7 +72,7 @@ final class NetworkManager {
         // set up cacheKey from URL
         let cacheKey = NSString(string: urlString)
         
-        // check caache for object before we download.
+        // check cache for object before we download.
         if let image = cache.object(forKey: cacheKey) {
             completed(image)
             return
