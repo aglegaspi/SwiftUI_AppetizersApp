@@ -21,7 +21,7 @@ struct AppetizerListView: View {
                     AppetizerListCell(appetizer: appetizer)
                         .onTapGesture {
                             isShowingDetail = true
-                            print("I've been tapped")
+                            
                         }
                 }
                 .navigationTitle("🍟 Appetizers")
@@ -31,7 +31,7 @@ struct AppetizerListView: View {
             }
             
             if isShowingDetail {
-                AppetizerDetailView(appetizer: MockData.sampleAppetizer)
+                AppetizerDetailView(appetizer: MockData.sampleAppetizer, isShowingDetail: $isShowingDetail)
             }
             
             if viewModel.isLoading {

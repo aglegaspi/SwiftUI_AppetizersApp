@@ -11,6 +11,7 @@ struct AppetizerDetailView: View {
     
     // pass in an appetizer for this view
     let appetizer: Appetizer
+    @Binding var isShowingDetail: Bool
     
     var body: some View {
         
@@ -93,7 +94,7 @@ struct AppetizerDetailView: View {
         .cornerRadius(12)
         .shadow(radius: 40)
         .overlay(Button {
-            print("dismiss")
+            isShowingDetail = false
         } label: {
             ZStack {
                 Circle()
@@ -114,6 +115,6 @@ struct AppetizerDetailView: View {
 
 struct AppetizerDisplay_Previews: PreviewProvider {
     static var previews: some View {
-        AppetizerDetailView(appetizer: MockData.sampleAppetizer)
+        AppetizerDetailView(appetizer: MockData.sampleAppetizer, isShowingDetail: .constant(true))
     }
 }
