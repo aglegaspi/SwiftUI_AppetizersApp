@@ -53,6 +53,7 @@ struct AppetizerDetailView: View {
         .background(Color(.systemBackground))
         .cornerRadius(12)
         .shadow(radius: 40)
+        
         .overlay(Button {
             isShowingDetail = false
         } label: {
@@ -65,7 +66,8 @@ struct AppetizerDetailView: View {
 
 struct AppetizerDisplay_Previews: PreviewProvider {
     static var previews: some View {
-        AppetizerDetailView(appetizer: MockData.sampleAppetizer, isShowingDetail: .constant(true))
+        AppetizerDetailView(appetizer: MockData.sampleAppetizer,
+                            isShowingDetail: .constant(true))
     }
 }
 

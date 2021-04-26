@@ -10,11 +10,17 @@ import SwiftUI
 struct AccountView: View {
     var body: some View {
         NavigationView {
-            Text("Account View!")
-                .navigationTitle("🗄 Account")
-        }
-    }
-}
+            Form {
+                Section(header: Text("Personal Information")) {
+                    Text("Account View!")
+                }
+
+            }//Form
+            .navigationTitle("🗄 Account")
+        }//NavigationView
+        
+    }//body
+}//struct
 
 struct AccountView_Previews: PreviewProvider {
     static var previews: some View {
