@@ -27,6 +27,7 @@
 		ECE7667C2636239B00C6B80B /* APButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE7667B2636239B00C6B80B /* APButton.swift */; };
 		ECE76680263625A400C6B80B /* XDismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE7667F263625A400C6B80B /* XDismissButton.swift */; };
 		ECE766832636FCBA00C6B80B /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE766822636FCBA00C6B80B /* AccountViewModel.swift */; };
+		ECE766862636FE8500C6B80B /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE766852636FE8500C6B80B /* String+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		ECE7667B2636239B00C6B80B /* APButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APButton.swift; sourceTree = "<group>"; };
 		ECE7667F263625A400C6B80B /* XDismissButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDismissButton.swift; sourceTree = "<group>"; };
 		ECE766822636FCBA00C6B80B /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
+		ECE766852636FE8500C6B80B /* String+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 		ECB1D8182631861700A60962 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				ECE766852636FE8500C6B80B /* String+Ext.swift */,
 				EC3FF109262E24B20048A570 /* Color+Ext.swift */,
 			);
 			path = Extensions;
@@ -311,6 +314,7 @@
 				EC3FF107262E23D80048A570 /* LoadingView.swift in Sources */,
 				ECCCF57826245622000DC0FF /* AppetizerTabView.swift in Sources */,
 				ECD41C6526286D01000DCFE8 /* NetworkManager.swift in Sources */,
+				ECE766862636FE8500C6B80B /* String+Ext.swift in Sources */,
 				ECB1D8102630DCD500A60962 /* RemoteImage.swift in Sources */,
 				ECCCF57626245622000DC0FF /* SwiftUI_AppetizersApp.swift in Sources */,
 				EC3FF104262D92A80048A570 /* Alert.swift in Sources */,
