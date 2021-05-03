@@ -33,7 +33,16 @@ final class AccountViewModel: ObservableObject {
     }
     
     func retrieveUser() {
+        // make sure we have data
+        guard let userData = userData else { return }
         
+        do {
+            // decode the data into a User
+            user = try JSONDecoder().decode(User.self, from: userData)
+        } catch {
+            // if we can't decode load this alert
+            alertItem = AlertContext.invalidUserData
+        }
     }
     
     

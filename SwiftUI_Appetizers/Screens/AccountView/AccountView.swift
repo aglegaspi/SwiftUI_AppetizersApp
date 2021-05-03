@@ -42,6 +42,9 @@ struct AccountView: View {
             }//Form
             .navigationTitle("🗄 Account")
         }//NavigationView
+        .onAppear {
+            viewModel.retrieveUser()
+        }
         .alert(item: $viewModel.alertItem) { alertItem in
             Alert(title: alertItem.title, message: alertItem.message, dismissButton: alertItem.dismissButton)
         }
