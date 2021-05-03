@@ -16,13 +16,19 @@ final class AccountViewModel: ObservableObject {
     
     
     func saveChanges() {
+        // check if anything is invalid
         guard isValidForm else { return }
         
         do {
+            // encode your user to data
             let data = try JSONEncoder().encode(user)
+            // set user data to data for UserDefaults
             userData = data
+            // if user data is successful load alert
+            alertItem = AlertContext.userSaveSuccess
         } catch {
-            
+            // if encoding fails show this alert
+            alertItem = AlertContext.invalidUserData
         }
     }
     
