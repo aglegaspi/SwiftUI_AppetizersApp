@@ -11,6 +11,7 @@
 		EC3FF107262E23D80048A570 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3FF106262E23D80048A570 /* LoadingView.swift */; };
 		EC3FF10A262E24B20048A570 /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3FF109262E24B20048A570 /* Color+Ext.swift */; };
 		EC4418AE262778B000A2FD06 /* AppetizerListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4418AD262778B000A2FD06 /* AppetizerListCell.swift */; };
+		EC84ADA22640AF180010A42E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC84ADA12640AF180010A42E /* User.swift */; };
 		ECB1D8102630DCD500A60962 /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB1D80F2630DCD500A60962 /* RemoteImage.swift */; };
 		ECB1D820263187E300A60962 /* AppetizerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB1D81F263187E300A60962 /* AppetizerDetailView.swift */; };
 		ECCCF57626245622000DC0FF /* SwiftUI_AppetizersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCCF57526245622000DC0FF /* SwiftUI_AppetizersApp.swift */; };
@@ -35,6 +36,7 @@
 		EC3FF106262E23D80048A570 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		EC3FF109262E24B20048A570 /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
 		EC4418AD262778B000A2FD06 /* AppetizerListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerListCell.swift; sourceTree = "<group>"; };
+		EC84ADA12640AF180010A42E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		ECB1D80F2630DCD500A60962 /* RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
 		ECB1D81F263187E300A60962 /* AppetizerDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerDetailView.swift; sourceTree = "<group>"; };
 		ECCCF57226245622000DC0FF /* SwiftUI_Appetizers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUI_Appetizers.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -145,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				ECCCF5962624835C000DC0FF /* Appetizer.swift */,
+				EC84ADA12640AF180010A42E /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -309,6 +312,7 @@
 				ECD41C6B2628815C000DCFE8 /* AppetizerListViewModel.swift in Sources */,
 				EC3FF10A262E24B20048A570 /* Color+Ext.swift in Sources */,
 				ECCCF591262456DF000DC0FF /* AccountView.swift in Sources */,
+				EC84ADA22640AF180010A42E /* User.swift in Sources */,
 				ECE7667C2636239B00C6B80B /* APButton.swift in Sources */,
 				ECB1D820263187E300A60962 /* AppetizerDetailView.swift in Sources */,
 				EC3FF107262E23D80048A570 /* LoadingView.swift in Sources */,
