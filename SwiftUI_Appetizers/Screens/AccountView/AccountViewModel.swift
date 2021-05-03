@@ -18,7 +18,12 @@ final class AccountViewModel: ObservableObject {
     func saveChanges() {
         guard isValidForm else { return }
         
-        print("changes have been made successfully.")
+        do {
+            let data = try JSONEncoder().encode(user)
+            userData = data
+        } catch {
+            
+        }
     }
     
     func retrieveUser() {
