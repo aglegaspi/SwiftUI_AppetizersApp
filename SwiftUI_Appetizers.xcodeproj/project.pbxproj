@@ -15,6 +15,7 @@
 		ECB1D8102630DCD500A60962 /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB1D80F2630DCD500A60962 /* RemoteImage.swift */; };
 		ECB1D820263187E300A60962 /* AppetizerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB1D81F263187E300A60962 /* AppetizerDetailView.swift */; };
 		ECBC32412649621600CEAE86 /* EmptyState.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBC32402649621600CEAE86 /* EmptyState.swift */; };
+		ECBC3245264966EA00CEAE86 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBC3244264966EA00CEAE86 /* Order.swift */; };
 		ECCCF57626245622000DC0FF /* SwiftUI_AppetizersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCCF57526245622000DC0FF /* SwiftUI_AppetizersApp.swift */; };
 		ECCCF57826245622000DC0FF /* AppetizerTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCCF57726245622000DC0FF /* AppetizerTabView.swift */; };
 		ECCCF57A26245624000DC0FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECCCF57926245624000DC0FF /* Assets.xcassets */; };
@@ -41,6 +42,7 @@
 		ECB1D80F2630DCD500A60962 /* RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
 		ECB1D81F263187E300A60962 /* AppetizerDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerDetailView.swift; sourceTree = "<group>"; };
 		ECBC32402649621600CEAE86 /* EmptyState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyState.swift; sourceTree = "<group>"; };
+		ECBC3244264966EA00CEAE86 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		ECCCF57226245622000DC0FF /* SwiftUI_Appetizers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUI_Appetizers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECCCF57526245622000DC0FF /* SwiftUI_AppetizersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_AppetizersApp.swift; sourceTree = "<group>"; };
 		ECCCF57726245622000DC0FF /* AppetizerTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerTabView.swift; sourceTree = "<group>"; };
@@ -78,7 +80,6 @@
 				ECB1D8132631859B00A60962 /* AppetizerListView */,
 				ECB1D814263185A400A60962 /* AccountView */,
 				ECB1D815263185AA00A60962 /* OrderView */,
-				ECB1D81F263187E300A60962 /* AppetizerDetailView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -97,6 +98,7 @@
 			children = (
 				ECCCF590262456DF000DC0FF /* AccountView.swift */,
 				ECE766822636FCBA00C6B80B /* AccountViewModel.swift */,
+				ECB1D81F263187E300A60962 /* AppetizerDetailView.swift */,
 			);
 			path = AccountView;
 			sourceTree = "<group>";
@@ -150,6 +152,7 @@
 			children = (
 				ECCCF5962624835C000DC0FF /* Appetizer.swift */,
 				EC84ADA12640AF180010A42E /* User.swift */,
+				ECBC3244264966EA00CEAE86 /* Order.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -319,6 +322,7 @@
 				ECD41C6826286E48000DCFE8 /* APError.swift in Sources */,
 				ECE76680263625A400C6B80B /* XDismissButton.swift in Sources */,
 				EC4418AE262778B000A2FD06 /* AppetizerListCell.swift in Sources */,
+				ECBC3245264966EA00CEAE86 /* Order.swift in Sources */,
 				ECE766832636FCBA00C6B80B /* AccountViewModel.swift in Sources */,
 				ECD41C6B2628815C000DCFE8 /* AppetizerListViewModel.swift in Sources */,
 				EC3FF10A262E24B20048A570 /* Color+Ext.swift in Sources */,
