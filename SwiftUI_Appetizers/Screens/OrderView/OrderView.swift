@@ -10,26 +10,35 @@ import SwiftUI
 struct OrderView: View {
     
     @State private var orderItems = MockData.orderItems
-        
+    
     var body: some View {
         NavigationView {
-            VStack{
-                List{
-                    ForEach(orderItems) { appetizer in
-                        AppetizerListCell(appetizer: appetizer)
-                    }
-                    .onDelete(perform: deleteItems)
-                }
-                .listStyle(PlainListStyle())
+            
+            ZStack {
                 
-                Button {
-                    print("order placed")
-                } label: {
-                    APButton(title: "$9.99 - Place Order")
+                VStack{
+                    List{
+                        ForEach(orderItems) { appetizer in
+                            AppetizerListCell(appetizer: appetizer)
+                        }
+                        .onDelete(perform: deleteItems)
+                    }
+                    .listStyle(PlainListStyle())
+                    
+                    Button {
+                        print("order placed")
+                    } label: {
+                        APButton(title: "$9.99 - Place Order")
+                    }
+                    .padding(.bottom, 20)
+                }//VStack
+                
+                if orderItems.isEmpty {
+                    EmptyState.init(imageName: "empty-order", message: "You have no items in your order. Please add an appetizer")
                 }
-                .padding(.bottom, 20)
-            }
-                .navigationTitle("🧾 Orders")
+                
+            }//ZStack
+            .navigationTitle("🧾 Orders")
         }
     }
     
