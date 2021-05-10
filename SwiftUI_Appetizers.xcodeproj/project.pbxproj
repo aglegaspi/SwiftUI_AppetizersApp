@@ -14,6 +14,7 @@
 		EC84ADA22640AF180010A42E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC84ADA12640AF180010A42E /* User.swift */; };
 		ECB1D8102630DCD500A60962 /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB1D80F2630DCD500A60962 /* RemoteImage.swift */; };
 		ECB1D820263187E300A60962 /* AppetizerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB1D81F263187E300A60962 /* AppetizerDetailView.swift */; };
+		ECBC32412649621600CEAE86 /* EmptyState.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBC32402649621600CEAE86 /* EmptyState.swift */; };
 		ECCCF57626245622000DC0FF /* SwiftUI_AppetizersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCCF57526245622000DC0FF /* SwiftUI_AppetizersApp.swift */; };
 		ECCCF57826245622000DC0FF /* AppetizerTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCCF57726245622000DC0FF /* AppetizerTabView.swift */; };
 		ECCCF57A26245624000DC0FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECCCF57926245624000DC0FF /* Assets.xcassets */; };
@@ -39,6 +40,7 @@
 		EC84ADA12640AF180010A42E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		ECB1D80F2630DCD500A60962 /* RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
 		ECB1D81F263187E300A60962 /* AppetizerDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerDetailView.swift; sourceTree = "<group>"; };
+		ECBC32402649621600CEAE86 /* EmptyState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyState.swift; sourceTree = "<group>"; };
 		ECCCF57226245622000DC0FF /* SwiftUI_Appetizers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUI_Appetizers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECCCF57526245622000DC0FF /* SwiftUI_AppetizersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_AppetizersApp.swift; sourceTree = "<group>"; };
 		ECCCF57726245622000DC0FF /* AppetizerTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerTabView.swift; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 		ECB1D81B2631867500A60962 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				ECBC323F264961F600CEAE86 /* Empty States */,
 				ECE7667A2636238B00C6B80B /* Buttons */,
 				ECB1D81E2631869200A60962 /* Image */,
 				ECB1D81D2631868C00A60962 /* Cells */,
@@ -185,6 +188,14 @@
 				ECB1D80F2630DCD500A60962 /* RemoteImage.swift */,
 			);
 			path = Image;
+			sourceTree = "<group>";
+		};
+		ECBC323F264961F600CEAE86 /* Empty States */ = {
+			isa = PBXGroup;
+			children = (
+				ECBC32402649621600CEAE86 /* EmptyState.swift */,
+			);
+			path = "Empty States";
 			sourceTree = "<group>";
 		};
 		ECCCF56926245622000DC0FF = {
@@ -319,6 +330,7 @@
 				ECCCF57826245622000DC0FF /* AppetizerTabView.swift in Sources */,
 				ECD41C6526286D01000DCFE8 /* NetworkManager.swift in Sources */,
 				ECE766862636FE8500C6B80B /* String+Ext.swift in Sources */,
+				ECBC32412649621600CEAE86 /* EmptyState.swift in Sources */,
 				ECB1D8102630DCD500A60962 /* RemoteImage.swift in Sources */,
 				ECCCF57626245622000DC0FF /* SwiftUI_AppetizersApp.swift in Sources */,
 				EC3FF104262D92A80048A570 /* Alert.swift in Sources */,
