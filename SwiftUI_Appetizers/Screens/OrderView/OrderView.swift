@@ -22,7 +22,7 @@ struct OrderView: View {
                             AppetizerListCell(appetizer: appetizer)
                         }
                         .onDelete(perform: order.deleteItems)
-                    }
+                    }//List
                     .listStyle(PlainListStyle())
                     
                     Button {
@@ -35,11 +35,11 @@ struct OrderView: View {
                 
                 if order.items.isEmpty {
                     EmptyState.init(imageName: "empty-order", message: "You have no items in your order. Please add an appetizer")
-                }
+                }//if
                 
             }//ZStack
             .navigationTitle("🧾 Orders")
-        }
+        }//NavigationView
     }
     
     
